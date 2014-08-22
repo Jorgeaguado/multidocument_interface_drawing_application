@@ -85,7 +85,8 @@ public class DrawFrame extends JFrame implements ActionListener, MenuListener {
 		this.desktop.add(this.frame);
 		try {
 			this.frame.setSelected(true);
-		} catch (java.beans.PropertyVetoException e) {
+		} catch (java.beans.PropertyVetoException pve) {
+			pve.printStackTrace();
 		}
 
 	}
